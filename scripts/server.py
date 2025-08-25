@@ -120,8 +120,10 @@ class ChimeraServer:
     def start(self):
         """啟動服務器"""
         try:
-            # 切換到項目目錄
-            os.chdir(os.path.dirname(os.path.abspath(__file__)))
+            # 切換到項目根目錄
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            project_root = os.path.dirname(script_dir)  # 上一級目錄
+            os.chdir(project_root)
             
             # 創建服務器
             Handler = ChimeraHTTPRequestHandler
