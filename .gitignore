@@ -1,0 +1,22 @@
+# 臨時文件
+*.log
+*.tmp
+*.bak
+*~
+__pycache__/
+*.pyc
+*.pyo
+
+# 編輯器文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系統文件
+.DS_Store
+Thumbs.db
+
+# 備份文件
+backup/
+*.backup

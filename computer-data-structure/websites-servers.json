@@ -1,0 +1,304 @@
+{
+  "personalWebsites": [
+    {
+      "name": "Asgard Gateway",
+      "domain": "asgard.world",
+      "status": "active",
+      "hostingProvider": "CloudNine Hosting",
+      "hostingAccount": "ID#ODIN001",
+      "hostingPlan": "Godly Unlimited",
+      "server": "mjolnir-server-01",
+      "domainExpiry": "2026-01-15",
+      "autoRenew": true,
+      "traffic": 9001,
+      "trafficPercentage": "900%",
+      "phpVersion": "8.3",
+      "emailAccounts": 12,
+      "purpose": "Main realm portal",
+      "techStack": {
+        "frontend": "React/TypeScript",
+        "backend": "Node.js",
+        "database": "PostgreSQL",
+        "cms": "Strapi"
+      },
+      "sslStatus": "Active",
+      "addons": ["Divine Security", "Thunder CDN"],
+      "notes": "Primary gateway to all nine realms"
+    },
+    {
+      "name": "Midgard Central",
+      "domain": "midgard.tech",
+      "status": "active",
+      "hostingProvider": "CloudNine Hosting",
+      "hostingAccount": "ID#ODIN001",
+      "hostingPlan": "Godly Unlimited",
+      "server": "mjolnir-server-01",
+      "domainExpiry": "2026-02-01",
+      "autoRenew": true,
+      "traffic": 1337,
+      "trafficPercentage": "200%",
+      "phpVersion": "8.3",
+      "emailAccounts": 5,
+      "purpose": "Human interaction hub",
+      "techStack": {
+        "frontend": "Vue.js",
+        "backend": "Python/Django",
+        "database": "MySQL",
+        "cms": "Custom CMS"
+      },
+      "sslStatus": "Active",
+      "notes": "Bridge between gods and humans"
+    },
+    {
+      "name": "Valhalla Warriors",
+      "domain": "valhalla.org",
+      "status": "active",
+      "hostingProvider": "WarriorCloud",
+      "hostingAccount": "ID#THOR777",
+      "hostingPlan": "Battle VPS",
+      "server": "valhalla-server-1",
+      "domainExpiry": "2026-03-10",
+      "autoRenew": true,
+      "traffic": 8080,
+      "trafficPercentage": "400%",
+      "phpVersion": "8.2",
+      "emailAccounts": 0,
+      "purpose": "Hall of fallen warriors",
+      "techStack": {
+        "frontend": "Angular",
+        "backend": "Go",
+        "database": "MongoDB",
+        "cms": ""
+      },
+      "sslStatus": "Active",
+      "addons": ["Battle Security", "Warrior Analytics"],
+      "notes": "Eternal feast hall for brave warriors"
+    },
+    {
+      "name": "Jotunheim Portal",
+      "domain": "jotunheim.net",
+      "status": "active",
+      "hostingProvider": "WarriorCloud",
+      "hostingAccount": "ID#THOR777",
+      "hostingPlan": "Giant Shared",
+      "server": "jotun-shared-01",
+      "domainExpiry": "2026-04-05",
+      "autoRenew": true,
+      "traffic": 666,
+      "trafficPercentage": "150%",
+      "phpVersion": "8.1",
+      "emailAccounts": 3,
+      "purpose": "Giant realm access",
+      "techStack": {
+        "frontend": "Svelte",
+        "backend": "Rust",
+        "database": "Redis",
+        "cms": ""
+      },
+      "sslStatus": "Active",
+      "notes": "Realm of frost giants - Cold storage optimized"
+    },
+    {
+      "name": "Alfheim Light Portal",
+      "domain": "alfheim.com",
+      "status": "active",
+      "hostingProvider": "LightElf Hosting",
+      "hostingAccount": "ID#FREYR999",
+      "hostingPlan": "Radiant Premium",
+      "server": "light-server-01",
+      "domainExpiry": "2026-05-20",
+      "autoRenew": true,
+      "traffic": 2500,
+      "trafficPercentage": "300%",
+      "phpVersion": "8.3",
+      "emailAccounts": 8,
+      "purpose": "Light elf sanctuary",
+      "techStack": {
+        "frontend": "Next.js",
+        "backend": "FastAPI",
+        "database": "PostgreSQL",
+        "cms": "Sanity"
+      },
+      "sslStatus": "Active",
+      "addons": ["Light Speed CDN", "Radiant Security"],
+      "notes": "Brightest realm with light-speed performance"
+    },
+    {
+      "name": "Yggdrasil Central Hub",
+      "domain": "yggdrasil.tree",
+      "status": "active",
+      "hostingProvider": "World Tree Hosting",
+      "hostingAccount": "TREE#001",
+      "hostingPlan": "Cosmic Tree Plan",
+      "server": "world-tree-root",
+      "domainExpiry": "2026-12-31",
+      "autoRenew": true,
+      "traffic": 99999,
+      "trafficPercentage": "∞%",
+      "phpVersion": "N/A",
+      "emailAccounts": 0,
+      "purpose": "Cosmic tree connecting all realms",
+      "techStack": {
+        "frontend": "Quantum UI",
+        "backend": "Cosmic API",
+        "database": "Universal DB",
+        "cms": "Tree CMS"
+      },
+      "sslStatus": "Eternally Active",
+      "notes": "The world tree - infinite capacity and uptime"
+    },
+    {
+      "name": "Helheim Archives",
+      "domain": "helheim.dark",
+      "status": "active",
+      "hostingProvider": "Underworld Hosting",
+      "hostingAccount": "HEL#666",
+      "hostingPlan": "Death VPS",
+      "server": "hel-server-666",
+      "domainExpiry": "2026-06-06",
+      "autoRenew": true,
+      "traffic": 0,
+      "trafficPercentage": "0%",
+      "phpVersion": "5.6",
+      "emailAccounts": 1,
+      "purpose": "Realm of the dead archives",
+      "techStack": {
+        "frontend": "Static HTML",
+        "backend": "Ancient PHP",
+        "database": "Flat Files",
+        "cms": ""
+      },
+      "sslStatus": "Cursed",
+      "notes": "Ancient system - needs modernization"
+    },
+    {
+      "name": "Ragnarok Countdown",
+      "domain": "ragnarok.end",
+      "status": "prophecy-mode",
+      "hostingProvider": "End Times Cloud",
+      "hostingAccount": "FATE#001",
+      "hostingPlan": "Apocalypse Special",
+      "server": "doom-server-001",
+      "domainExpiry": "2025-12-21",
+      "autoRenew": false,
+      "traffic": 777,
+      "trafficPercentage": "Final%",
+      "phpVersion": "∞.∞",
+      "emailAccounts": 0,
+      "purpose": "Countdown to the end of all things",
+      "techStack": {
+        "frontend": "Apocalypse JS",
+        "backend": "Destiny Engine",
+        "database": "Fate DB",
+        "cms": "Prophecy CMS"
+      },
+      "sslStatus": "Expiring with reality",
+      "notes": "Will be destroyed during Ragnarok - do not renew"
+    }
+  ],
+  "hostingServices": [
+    {
+      "provider": "CloudNine Hosting",
+      "plan": "Godly Unlimited",
+      "specifications": {
+        "cpu": "∞ Divine Cores",
+        "ram": "∞ GB",
+        "storage": "∞ TB SSD",
+        "bandwidth": "Unlimited",
+        "operatingSystem": "AsgardOS"
+      },
+      "ipAddress": {
+        "ipv4": "192.168.9.1",
+        "ipv6": "2001:db8::9"
+      },
+      "location": "Asgard Data Center",
+      "cost": {
+        "monthly": 99,
+        "currency": "USD"
+      },
+      "expirationDate": "2026-12-31",
+      "purpose": "Primary realm hosting",
+      "status": "active",
+      "notes": "Premium divine hosting with unlimited everything"
+    }
+  ],
+  "localDevelopment": {
+    "webServers": [
+      {
+        "service": "Apache",
+        "version": "2.4.54",
+        "ports": [80, 443],
+        "status": "active",
+        "configPath": "/etc/apache2/apache2.conf",
+        "documentRoot": "/var/www/html",
+        "notes": "Main development server"
+      },
+      {
+        "service": "Nginx",
+        "version": "1.20.2",
+        "ports": [8080, 8443],
+        "status": "active",
+        "configPath": "/etc/nginx/nginx.conf",
+        "documentRoot": "/usr/share/nginx/html",
+        "notes": "Reverse proxy and load balancer"
+      },
+      {
+        "service": "Node.js",
+        "version": "18.17.0",
+        "ports": [3000, 3001, 3002],
+        "status": "active",
+        "projectPath": "/home/developer/projects",
+        "notes": "Multiple Node.js applications running"
+      }
+    ],
+    "databases": [
+      {
+        "type": "MySQL",
+        "version": "8.0.33",
+        "port": 3306,
+        "status": "active",
+        "dataPath": "/var/lib/mysql",
+        "configPath": "/etc/mysql/mysql.conf.d/mysqld.cnf",
+        "notes": "Primary database server"
+      },
+      {
+        "type": "PostgreSQL",
+        "version": "15.3",
+        "port": 5432,
+        "status": "active",
+        "dataPath": "/var/lib/postgresql/15/main",
+        "configPath": "/etc/postgresql/15/main/postgresql.conf",
+        "notes": "Advanced analytics database"
+      },
+      {
+        "type": "Redis",
+        "version": "7.0.11",
+        "port": 6379,
+        "status": "active",
+        "notes": "Caching and session store"
+      }
+    ],
+    "developmentTools": [
+      {
+        "tool": "Git",
+        "version": "2.40.1",
+        "configPath": "~/.gitconfig",
+        "globalUser": "Odin AllFather",
+        "globalEmail": "odin@asgard.world"
+      },
+      {
+        "tool": "Docker",
+        "version": "24.0.2",
+        "status": "active",
+        "configPath": "/etc/docker/daemon.json"
+      },
+      {
+        "tool": "VS Code",
+        "version": "1.80.1",
+        "extensions": ["Norse Extension Pack", "Rune Formatter"],
+        "configPath": "~/.config/Code/User/settings.json"
+      }
+    ]
+  },
+  "lastUpdated": "2025-08-25"
+}

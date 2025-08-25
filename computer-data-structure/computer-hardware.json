@@ -1,0 +1,419 @@
+{
+  "workstations": [
+    {
+      "name": "Odin's Throne Workstation",
+      "type": "High-End Workstation",
+      "specifications": {
+        "motherboard": "ASUS ROG Maximus Z790 Extreme",
+        "cpu": "Intel Core i9-13900KS",
+        "cpuCores": 24,
+        "cpuThreads": 32,
+        "baseFrequency": "3.2 GHz",
+        "boostFrequency": "6.0 GHz",
+        "ram": "128 GB DDR5-6000",
+        "ramSlots": "4x32GB",
+        "gpu": "NVIDIA RTX 4090 24GB",
+        "storage": [
+          {
+            "type": "NVMe SSD",
+            "capacity": "2TB",
+            "model": "Samsung 990 PRO",
+            "purpose": "OS & Applications"
+          },
+          {
+            "type": "NVMe SSD",
+            "capacity": "4TB",
+            "model": "WD Black SN850X",
+            "purpose": "Projects & Games"
+          },
+          {
+            "type": "SATA SSD",
+            "capacity": "8TB",
+            "model": "Samsung 870 QVO",
+            "purpose": "Media Storage"
+          }
+        ],
+        "psu": "Corsair AX1600i 1600W 80+ Titanium",
+        "cooling": "Custom Loop with 360mm + 280mm Radiators",
+        "case": "Fractal Design Define 7 XL",
+        "operatingSystem": "Windows 11 Pro"
+      },
+      "peripherals": {
+        "monitor": [
+          {
+            "model": "ASUS ProArt PA32UCG-K",
+            "size": "32\"",
+            "resolution": "4K",
+            "refreshRate": "120Hz",
+            "panel": "Mini LED"
+          },
+          {
+            "model": "Dell Alienware AW2723DF",
+            "size": "27\"",
+            "resolution": "1440p",
+            "refreshRate": "280Hz",
+            "panel": "Fast IPS"
+          }
+        ],
+        "keyboard": "Keychron Q6 Pro (Cherry MX Brown)",
+        "mouse": "Logitech MX Master 3S",
+        "audio": "Sennheiser HD800S + Focusrite Scarlett 2i2",
+        "webcam": "Logitech Brio 4K"
+      },
+      "purchaseDate": "2023-11-15",
+      "warranty": "3 years",
+      "cost": 8999,
+      "currency": "USD",
+      "purpose": "Primary development and content creation",
+      "performance": {
+        "cinebenchR23": 38500,
+        "geekbench5Single": 2100,
+        "geekbench5Multi": 28000,
+        "crystalDiskMark": "7000+ MB/s"
+      },
+      "notes": "All-Father's ultimate development machine"
+    },
+    {
+      "name": "Thor's Thunder Laptop",
+      "type": "Gaming Laptop",
+      "specifications": {
+        "brand": "ASUS ROG Strix SCAR 18",
+        "cpu": "Intel Core i9-13980HX",
+        "cpuCores": 24,
+        "cpuThreads": 32,
+        "ram": "64 GB DDR5-4800",
+        "gpu": "NVIDIA RTX 4090 16GB Mobile",
+        "storage": [
+          {
+            "type": "NVMe SSD",
+            "capacity": "2TB",
+            "model": "Samsung PM9A1",
+            "purpose": "Primary Storage"
+          }
+        ],
+        "display": {
+          "size": "18\"",
+          "resolution": "2560x1600",
+          "refreshRate": "240Hz",
+          "panel": "Mini LED"
+        },
+        "operatingSystem": "Windows 11 Pro"
+      },
+      "peripherals": {
+        "externalMonitor": "ASUS TUF Gaming VG27AQ",
+        "keyboard": "Mechanical RGB Keyboard (Built-in)",
+        "mouse": "Razer DeathAdder V3 Pro",
+        "headset": "SteelSeries Arctis Pro Wireless"
+      },
+      "purchaseDate": "2024-02-20",
+      "warranty": "2 years",
+      "cost": 4999,
+      "currency": "USD",
+      "purpose": "Portable gaming and development",
+      "batteryLife": "4-6 hours (varies by usage)",
+      "notes": "God of Thunder's mobile workstation"
+    },
+    {
+      "name": "Frigg's Productivity Station",
+      "type": "Office Workstation",
+      "specifications": {
+        "motherboard": "MSI PRO B650M-A WiFi",
+        "cpu": "AMD Ryzen 7 7700X",
+        "cpuCores": 8,
+        "cpuThreads": 16,
+        "ram": "32 GB DDR5-5200",
+        "gpu": "AMD Radeon RX 6700 XT",
+        "storage": [
+          {
+            "type": "NVMe SSD",
+            "capacity": "1TB",
+            "model": "Western Digital SN770",
+            "purpose": "OS & Applications"
+          },
+          {
+            "type": "SATA SSD",
+            "capacity": "2TB",
+            "model": "Crucial MX4",
+            "purpose": "Documents & Media"
+          }
+        ],
+        "psu": "Seasonic Focus GX-750 750W 80+ Gold",
+        "cooling": "Noctua NH-D15",
+        "case": "Fractal Design Define R6",
+        "operatingSystem": "Windows 11 Home"
+      },
+      "peripherals": {
+        "monitor": [
+          {
+            "model": "Dell U2723QE",
+            "size": "27\"",
+            "resolution": "4K",
+            "refreshRate": "60Hz",
+            "panel": "IPS"
+          }
+        ],
+        "keyboard": "Logitech MX Keys",
+        "mouse": "Logitech MX Vertical",
+        "speakers": "Audioengine A2+"
+      },
+      "purchaseDate": "2023-08-10",
+      "warranty": "3 years",
+      "cost": 2499,
+      "currency": "USD",
+      "purpose": "Office work and productivity",
+      "notes": "All-Mother's efficient work station"
+    }
+  ],
+  "servers": [
+    {
+      "name": "Heimdall Guardian Server",
+      "type": "Home Server/NAS",
+      "specifications": {
+        "chassis": "Synology DS923+ 4-Bay NAS",
+        "cpu": "AMD Ryzen R1600 Dual-Core",
+        "ram": "32 GB DDR4 SO-DIMM",
+        "storage": [
+          {
+            "type": "HDD",
+            "capacity": "18TB",
+            "model": "Western Digital Red Pro",
+            "quantity": 4,
+            "configuration": "RAID 5"
+          },
+          {
+            "type": "NVMe Cache",
+            "capacity": "1TB",
+            "model": "Samsung 970 EVO Plus",
+            "quantity": 2,
+            "configuration": "Read/Write Cache"
+          }
+        ],
+        "networkPorts": 2,
+        "usbPorts": 4,
+        "operatingSystem": "Synology DSM 7.2"
+      },
+      "services": [
+        "File Server",
+        "Media Server (Plex)",
+        "Docker Container Host",
+        "VPN Server",
+        "Time Machine Backup",
+        "Surveillance Station"
+      ],
+      "purchaseDate": "2023-06-01",
+      "warranty": "2 years",
+      "cost": 1299,
+      "currency": "USD",
+      "uptime": "99.8%",
+      "purpose": "Home media server and backup solution",
+      "notes": "Guardian of all digital realms and data"
+    }
+  ],
+  "mobileDevices": [
+    {
+      "name": "Loki's Pocket Trickster",
+      "type": "Smartphone",
+      "specifications": {
+        "brand": "Samsung",
+        "model": "Galaxy S24 Ultra",
+        "storage": "1TB",
+        "ram": "12GB",
+        "display": "6.8\" Dynamic AMOLED 2X",
+        "camera": "200MP Main + 50MP Periscope Telephoto + 10MP Telephoto + 12MP Ultrawide",
+        "battery": "5000mAh",
+        "operatingSystem": "Android 14 / One UI 6.1"
+      },
+      "accessories": [
+        "Samsung S Pen",
+        "Samsung Galaxy Buds2 Pro",
+        "Samsung 45W Fast Charger",
+        "Spigen Tough Armor Case"
+      ],
+      "purchaseDate": "2024-02-15",
+      "warranty": "1 year",
+      "cost": 1399,
+      "currency": "USD",
+      "purpose": "Primary smartphone for communication and mobile productivity",
+      "notes": "Shape-shifter's adaptive communication device"
+    },
+    {
+      "name": "Baldur's Light Tablet",
+      "type": "Tablet",
+      "specifications": {
+        "brand": "Apple",
+        "model": "iPad Pro 12.9\" M2",
+        "storage": "512GB",
+        "ram": "8GB",
+        "display": "12.9\" Liquid Retina XDR",
+        "connectivity": "Wi-Fi 6E + Cellular 5G",
+        "operatingSystem": "iPadOS 17"
+      },
+      "accessories": [
+        "Apple Pencil 2nd Gen",
+        "Magic Keyboard",
+        "Apple Care+"
+      ],
+      "purchaseDate": "2023-12-01",
+      "warranty": "3 years (AppleCare+)",
+      "cost": 1899,
+      "currency": "USD",
+      "purpose": "Digital art and note-taking",
+      "notes": "God of Light's creative inspiration tablet"
+    }
+  ],
+  "networkEquipment": [
+    {
+      "name": "Bifrost Network Bridge",
+      "type": "Router",
+      "model": "ASUS ROG Rapture GT-AXE16000",
+      "specifications": {
+        "wifiStandard": "Wi-Fi 6E",
+        "maxSpeed": "16000 Mbps",
+        "ports": "4x 1Gbps LAN + 2x 10Gbps LAN/WAN",
+        "cpu": "Quad-Core ARM Cortex-A78",
+        "ram": "2GB",
+        "antennas": 8
+      },
+      "features": [
+        "Triple-Level Game Acceleration",
+        "AiMesh Support",
+        "VPN Server",
+        "AiProtection Pro",
+        "Parental Controls"
+      ],
+      "purchaseDate": "2023-07-15",
+      "warranty": "3 years",
+      "cost": 799,
+      "currency": "USD",
+      "purpose": "High-performance gaming and streaming router",
+      "notes": "Rainbow bridge connecting all network realms"
+    },
+    {
+      "name": "Yggdrasil Switch Hub",
+      "type": "Network Switch",
+      "model": "NETGEAR ProSAFE XS728T",
+      "specifications": {
+        "ports": "24x 10Gbps + 4x 10Gbps SFP+",
+        "switching": "560 Gbps",
+        "forwardingRate": "416.7 Mpps",
+        "management": "Smart Managed"
+      },
+      "purchaseDate": "2023-09-20",
+      "warranty": "5 years",
+      "cost": 1299,
+      "currency": "USD",
+      "purpose": "High-speed network backbone",
+      "notes": "World tree's central network distribution"
+    }
+  ],
+  "inputDevices": [
+    {
+      "name": "Mjolnir Mechanical Keyboard",
+      "type": "Mechanical Keyboard",
+      "model": "Keychron Q1 Pro",
+      "specifications": {
+        "layout": "75% (82 keys)",
+        "switches": "Gateron G Pro Brown",
+        "keycaps": "Double-shot PBT",
+        "backlight": "South-facing RGB",
+        "connectivity": "USB-C Wired + 2.4GHz Wireless + Bluetooth 5.1",
+        "battery": "4000mAh"
+      },
+      "purchaseDate": "2024-01-10",
+      "cost": 189,
+      "currency": "USD",
+      "purpose": "Primary typing for coding and writing",
+      "notes": "Only worthy programmers can lift this keyboard"
+    },
+    {
+      "name": "Gungnir Precision Mouse",
+      "type": "Gaming Mouse",
+      "model": "Logitech G Pro X Superlight 2",
+      "specifications": {
+        "sensor": "Hero 25K",
+        "maxDPI": "25600",
+        "weight": "60g",
+        "connectivity": "Lightspeed Wireless",
+        "battery": "95 hours",
+        "buttons": 5
+      },
+      "purchaseDate": "2023-11-25",
+      "cost": 159,
+      "currency": "USD",
+      "purpose": "Gaming and precision work",
+      "notes": "Odin's spear - never misses its target"
+    }
+  ],
+  "audioVisual": [
+    {
+      "name": "Asgard Vision Display",
+      "type": "Monitor",
+      "model": "Samsung Odyssey Neo G9 57\"",
+      "specifications": {
+        "size": "57\"",
+        "resolution": "7680x2160 (Dual 4K)",
+        "refreshRate": "240Hz",
+        "panel": "VA with Quantum Mini LED",
+        "curvature": "1000R",
+        "connectivity": "DisplayPort 1.4 x2, HDMI 2.1 x1, USB-C x1"
+      },
+      "purchaseDate": "2024-03-05",
+      "warranty": "3 years",
+      "cost": 2499,
+      "currency": "USD",
+      "purpose": "Ultra-wide gaming and productivity",
+      "notes": "All-seeing vision across multiple realms"
+    },
+    {
+      "name": "Heimdall's Watchtower Speakers",
+      "type": "Studio Monitors",
+      "model": "Adam Audio A8X",
+      "specifications": {
+        "type": "3-way Active Studio Monitor",
+        "woofer": "8\" Carbon Fiber",
+        "midrange": "4\" Midwoofer",
+        "tweeter": "X-ART",
+        "power": "300W",
+        "frequency": "38Hz - 50kHz"
+      },
+      "quantity": 2,
+      "purchaseDate": "2023-10-12",
+      "warranty": "5 years",
+      "cost": 1998,
+      "currency": "USD",
+      "purpose": "Professional audio monitoring",
+      "notes": "Guardian's ears that hear across all nine realms"
+    }
+  ],
+  "maintenanceSchedule": {
+    "daily": [
+      "Check system temperatures",
+      "Monitor disk usage",
+      "Backup critical files"
+    ],
+    "weekly": [
+      "Clean keyboard and mouse",
+      "Check for driver updates",
+      "Defragment SSDs (if needed)"
+    ],
+    "monthly": [
+      "Clean computer cases",
+      "Check fan operation",
+      "Update firmware",
+      "Test backup systems"
+    ],
+    "quarterly": [
+      "Deep clean all components",
+      "Check thermal paste",
+      "Cable management review",
+      "Performance benchmarking"
+    ],
+    "yearly": [
+      "Full hardware inspection",
+      "Warranty renewals",
+      "Upgrade planning",
+      "Component replacement planning"
+    ]
+  },
+  "lastUpdated": "2025-08-25"
+}

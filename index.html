@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chimera Protocol - Personal Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Matrix Rain Background -->
+    <canvas id="matrix-rain"></canvas>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-container">
+            <div class="glitch-text" data-text="THE CHIMERA PROTOCOL">THE CHIMERA PROTOCOL</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-text">正在初始化系統...</div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div id="main-container" class="hidden">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-left">
+                <h1 class="logo glitch-text" data-text="THE CHIMERA PROTOCOL">THE CHIMERA PROTOCOL</h1>
+                <div class="system-status">
+                    <span class="status-indicator online"></span>
+                    <span class="status-text">系統在線</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="datetime" id="datetime"></div>
+                <div class="user-info">
+                    <span class="user-name">管理員</span>
+                    <div class="avatar"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item active" data-panel="domains">
+                    <i class="nav-icon">🌐</i>
+                    <span>域名管理</span>
+                    <div class="nav-indicator"></div>
+                </li>
+                <li class="nav-item" data-panel="websites">
+                    <i class="nav-icon">🌍</i>
+                    <span>網站管理</span>
+                    <div class="nav-indicator"></div>
+                </li>
+                <li class="nav-item" data-panel="hosting">
+                    <i class="nav-icon">🖥️</i>
+                    <span>主機服務</span>
+                    <div class="nav-indicator"></div>
+                </li>
+                <li class="nav-item" data-panel="hardware">
+                    <i class="nav-icon">⚙️</i>
+                    <span>硬件監控</span>
+                    <div class="nav-indicator"></div>
+                </li>
+                <li class="nav-item" data-panel="backup">
+                    <i class="nav-icon">💾</i>
+                    <span>備份管理</span>
+                    <div class="nav-indicator"></div>
+                </li>
+                <li class="nav-item" data-panel="network">
+                    <i class="nav-icon">📡</i>
+                    <span>網路服務</span>
+                    <div class="nav-indicator"></div>
+                </li>
+                <li class="nav-item" data-panel="security">
+                    <i class="nav-icon">🔒</i>
+                    <span>安全監控</span>
+                    <div class="nav-indicator"></div>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Domain Management Panel -->
+            <section id="domains-panel" class="panel active">
+                <div class="panel-header">
+                    <div class="panel-title-section">
+                        <h2 class="panel-title">域名管理中心</h2>
+                        <div class="panel-controls">
+                            <button id="refresh-btn" class="refresh-btn" title="刷新數據">
+                                <span class="refresh-icon">🔄</span>
+                                <span class="refresh-text">刷新</span>
+                            </button>
+                            <div class="last-update" id="last-update">
+                                最後更新: 載入中...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-stats">
+                        <div class="stat-card">
+                            <span class="stat-value" id="total-domains">-</span>
+                            <span class="stat-label">總域名數</span>
+                        </div>
+                        <div class="stat-card warning">
+                            <span class="stat-value" id="expiring-domains">-</span>
+                            <span class="stat-label">即將到期</span>
+                        </div>
+                        <div class="stat-card success">
+                            <span class="stat-value" id="auto-renew-domains">-</span>
+                            <span class="stat-label">自動續約</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Domain Filter -->
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label>註冊商:</label>
+                        <select id="registrar-filter">
+                            <option value="all">所有</option>
+                            <option value="GoDaddy">GoDaddy</option>
+                            <option value="DreamHost">DreamHost</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>狀態:</label>
+                        <select id="status-filter">
+                            <option value="all">所有</option>
+                            <option value="active">正常</option>
+                            <option value="expiring">即將到期</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <input type="text" id="domain-search" placeholder="搜索域名...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                </div>
+
+                <!-- Domain Grid -->
+                <div class="domain-grid" id="domain-grid">
+                    <!-- Domain cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Website Management Panel -->
+            <section id="websites-panel" class="panel">
+                <div class="panel-header">
+                    <div class="panel-title-section">
+                        <h2 class="panel-title">網站管理中心</h2>
+                        <div class="panel-controls">
+                            <button id="refresh-websites-btn" class="refresh-btn" title="刷新網站數據">
+                                <span class="refresh-icon">🔄</span>
+                                <span class="refresh-text">刷新</span>
+                            </button>
+                            <div class="last-update" id="websites-last-update">
+                                最後更新: 載入中...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-stats">
+                        <div class="stat-card">
+                            <span class="stat-value" id="total-websites">-</span>
+                            <span class="stat-label">總網站數</span>
+                        </div>
+                        <div class="stat-card success">
+                            <span class="stat-value" id="active-websites">-</span>
+                            <span class="stat-label">活躍網站</span>
+                        </div>
+                        <div class="stat-card warning">
+                            <span class="stat-value" id="high-traffic-sites">-</span>
+                            <span class="stat-label">高流量</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Website Filter -->
+                <div class="filter-bar">
+                    <div class="filter-group">
+                        <label>託管商:</label>
+                        <select id="hosting-filter">
+                            <option value="all">所有</option>
+                            <option value="DreamHost">DreamHost</option>
+                            <option value="お名前.com">お名前.com</option>
+                            <option value="Xserver">Xserver</option>
+                            <option value="ムームードメイン">ムームードメイン</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>狀態:</label>
+                        <select id="website-status-filter">
+                            <option value="all">所有</option>
+                            <option value="active">活躍</option>
+                            <option value="dns-only">僅DNS</option>
+                            <option value="transfer-needed">需轉移</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <input type="text" id="website-search" placeholder="搜索網站...">
+                        <button class="search-btn">🔍</button>
+                    </div>
+                </div>
+
+                <!-- Website Grid -->
+                <div class="website-grid" id="website-grid">
+                    <!-- Website cards will be populated by JavaScript -->
+                </div>
+            </section>
+
+            <!-- Other panels (placeholders) -->
+            <section id="hosting-panel" class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">主機服務監控</h2>
+                </div>
+                <div class="coming-soon">
+                    <div class="glitch-text" data-text="開發中...">開發中...</div>
+                </div>
+            </section>
+
+            <section id="hardware-panel" class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">硬件監控</h2>
+                </div>
+                <div class="coming-soon">
+                    <div class="glitch-text" data-text="開發中...">開發中...</div>
+                </div>
+            </section>
+
+            <section id="backup-panel" class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">備份管理</h2>
+                </div>
+                <div class="coming-soon">
+                    <div class="glitch-text" data-text="開發中...">開發中...</div>
+                </div>
+            </section>
+
+            <section id="network-panel" class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">網路服務</h2>
+                </div>
+                <div class="coming-soon">
+                    <div class="glitch-text" data-text="開發中...">開發中...</div>
+                </div>
+            </section>
+
+            <section id="security-panel" class="panel">
+                <div class="panel-header">
+                    <h2 class="panel-title">安全監控</h2>
+                </div>
+                <div class="coming-soon">
+                    <div class="glitch-text" data-text="開發中...">開發中...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Domain Detail Modal -->
+    <div id="domain-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-domain-name"></h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Domain details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Website Detail Modal -->
+    <div id="website-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-website-name"></h3>
+                <button class="modal-close website-modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="website-modal-body">
+                <!-- Website details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+{
+  "domainManagement": [
+    {
+      "domain": "asgard.world",
+      "registrar": "GodRegistry",
+      "registrarAccount": "Customer #ODIN001",
+      "registrationDate": "2023-01-15",
+      "expirationDate": "2026-01-15",
+      "autoRenew": true,
+      "dnsProvider": "GodRegistry",
+      "nameservers": ["ns1.asgard.world", "ns2.asgard.world"],
+      "cost": {
+        "annual": 25,
+        "currency": "USD"
+      },
+      "estimatedValue": "$5,000",
+      "notes": "Premium Norse mythology domain"
+    },
+    {
+      "domain": "midgard.tech",
+      "registrar": "GodRegistry",
+      "registrarAccount": "Customer #ODIN001",
+      "registrationDate": "2023-02-01",
+      "expirationDate": "2026-02-01",
+      "autoRenew": true,
+      "dnsProvider": "GodRegistry",
+      "nameservers": ["ns1.midgard.tech", "ns2.midgard.tech"],
+      "cost": {
+        "annual": 15,
+        "currency": "USD"
+      },
+      "estimatedValue": "$2,500",
+      "notes": "Human realm portal"
+    },
+    {
+      "domain": "valhalla.org",
+      "registrar": "ValhallaDomains",
+      "registrarAccount": "ID#THOR777",
+      "registrationDate": "2023-03-10",
+      "expirationDate": "2026-03-10",
+      "autoRenew": true,
+      "autoRenewDate": "2026-02-10",
+      "dnsProvider": "ValhallaDomains",
+      "nameservers": ["ns1.valhalla.org", "ns2.valhalla.org"],
+      "cost": {
+        "annual": 30,
+        "currency": "USD"
+      },
+      "transferLock": true,
+      "notes": "Hall of the slain warriors"
+    },
+    {
+      "domain": "jotunheim.net",
+      "registrar": "ValhallaDomains",
+      "registrarAccount": "ID#THOR777",
+      "registrationDate": "2023-04-05",
+      "expirationDate": "2026-04-05",
+      "autoRenew": true,
+      "autoRenewDate": "2026-03-05",
+      "dnsProvider": "ValhallaDomains",
+      "nameservers": ["ns1.jotunheim.net", "ns2.jotunheim.net"],
+      "cost": {
+        "annual": 20,
+        "currency": "USD"
+      },
+      "transferLock": true,
+      "notes": "Realm of the giants"
+    },
+    {
+      "domain": "alfheim.com",
+      "registrar": "ValhallaDomains",
+      "registrarAccount": "ID#FREYR999",
+      "registrationDate": "2023-05-20",
+      "expirationDate": "2026-05-20",
+      "autoRenew": true,
+      "autoRenewDate": "2026-04-20",
+      "dnsProvider": "ValhallaDomains",
+      "nameservers": ["ns1.alfheim.com", "ns2.alfheim.com"],
+      "cost": {
+        "annual": 22,
+        "currency": "USD"
+      },
+      "transferLock": true,
+      "notes": "Realm of light elves"
+    },
+    {
+      "domain": "helheim.dark",
+      "registrar": "NorseRegistry",
+      "registrarAccount": "HEL#666",
+      "registrationDate": "2023-06-06",
+      "expirationDate": "2026-06-06",
+      "autoRenew": true,
+      "dnsProvider": "NorseRegistry",
+      "nameservers": ["ns1.helheim.dark", "ns2.helheim.dark"],
+      "cost": {
+        "annual": 0,
+        "currency": "USD"
+      },
+      "status": "Active",
+      "notes": "Realm of the dead - Special Norse TLD"
+    },
+    {
+      "domain": "yggdrasil.tree",
+      "registrar": "WorldTreeDomains",
+      "registrarAccount": "TREE#001",
+      "contractNumber": "WT0008038",
+      "registrationDate": "2025-01-01",
+      "expirationDate": "2026-12-31",
+      "autoRenew": true,
+      "dnsProvider": "WorldTreeDomains",
+      "nameservers": ["root1.yggdrasil.tree", "root2.yggdrasil.tree"],
+      "cost": {
+        "annual": 0,
+        "currency": "USD"
+      },
+      "serviceName": "World Tree Central Domain",
+      "notes": "The cosmic tree connecting all realms"
+    },
+    {
+      "domain": "ragnarok.end",
+      "registrar": "EndTimesDomains",
+      "registrarAccount": "FATE#001",
+      "registrationDate": "2024-12-21",
+      "expirationDate": "2025-12-21",
+      "autoRenew": false,
+      "dnsProvider": "EndTimesDomains",
+      "nameservers": ["ns1.ragnarok.end", "ns2.ragnarok.end"],
+      "cost": {
+        "annual": 100,
+        "currency": "USD"
+      },
+      "notes": "The twilight of the gods - Expiring soon!"
+    }
+  ],
+  "lastUpdated": "2025-08-25"
+}
