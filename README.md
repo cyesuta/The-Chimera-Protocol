@@ -35,15 +35,13 @@ The system uses a modular architecture where modules are displayed only when the
 ```
 The-Chimera-Protocol/
 ├── README.md                    # Project documentation | 專案說明文件
-├── start.bat                    # Windows startup script | Windows 啟動腳本
-├── start.sh                     # Linux/Mac startup script | Linux/Mac 啟動腳本
 ├── index.html                   # Main interface | 主頁面
 ├── styles.css                   # Stylesheet | 樣式文件
 ├── script.js                    # Frontend JavaScript | 前端腳本
 ├── scripts/                     # Server startup files | 伺服器啟動相關
 │   ├── server.py                # Python server | Python 伺服器
-│   ├── start.bat                # Windows startup script (backup) | Windows 啟動腳本 (備用)
-│   └── start.sh                 # Linux/Mac startup script (backup) | Linux/Mac 啟動腳本 (備用)
+│   ├── start.bat                # Windows startup script | Windows 啟動腳本
+│   └── start.sh                 # Linux/Mac startup script | Linux/Mac 啟動腳本
 └── computer-data-structure/     # Modular configuration data | 模組化配置資料
     ├── domains.json             # Domain management data | 域名管理數據
     ├── websites-servers.json    # Websites and servers data | 網站與伺服器數據
@@ -69,9 +67,10 @@ The-Chimera-Protocol/
    ```
 2. **Start the server | 啟動伺服器**
 
-   - **Windows**: Double-click `start.bat` or run `python scripts/server.py`**Windows**: 雙擊 `start.bat` 或執行 `python scripts/server.py`
-   - **Linux/Mac**: Run `./start.sh` or run `python scripts/server.py`
-     **Linux/Mac**: 執行 `./start.sh` 或執行 `python scripts/server.py`
+   - **Windows**: Double-click `scripts/start.bat` or run `python scripts/server.py`  
+     **Windows**: 雙擊 `scripts/start.bat` 或執行 `python scripts/server.py`
+   - **Linux/Mac**: Run `./scripts/start.sh` or run `python scripts/server.py`  
+     **Linux/Mac**: 執行 `./scripts/start.sh` 或執行 `python scripts/server.py`
 3. **Access the control panel | 進入控制面板**
 
    - The browser will automatically open to `http://localhost:8008`瀏覽器會自動開啟並導向 `http://localhost:8008`
